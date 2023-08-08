@@ -57,7 +57,7 @@ class t extends HTMLElement {
         n.name = "activate";
         const o = document.createElement("button");
         if (
-            o.innerText = "CONNECT",
+            o.innerText = "INSTALL",
             n.append(o),
             "adoptedStyleSheets" in Document.prototype && "replaceSync" in CSSStyleSheet.prototype
         ) {

@@ -17,9 +17,13 @@ body {
     font-weight: 600;
 }
 
+.versions {
+    margin-bottom: 50px;
+}
+
 p {
     font-size: 0.9em;
-    color: #888;
+    color: white;
 }
 
 h1 {
