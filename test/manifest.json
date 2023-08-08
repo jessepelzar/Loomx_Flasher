@@ -1,34 +1,7 @@
 {
-    "name": "Loomx Controller Flasher",
+    "name": "Loomx Controller FW Version 1.0.17",
     "new_install_prompt_erase": false,
     "builds": [
-      {
-        "chipFamily": "ESP32",
-        "parts": [
-          { "path": "loomx_lune_legacy_v1.ino.bootloader.bin", "offset": 4096 },
-          { "path": "loomx_lune_legacy_v1.ino.partitions.bin", "offset": 32768 },
-          { "path": "boot_app0.bin", "offset": 57344 },
-          { "path": "loomx_lune_legacy_v1.ino.bin", "offset": 65536 }
-        ]
-      },
-      {
-        "chipFamily": "ESP32",
-        "parts": [
-          { "path": "loomx_lune_legacy_v1.ino.bootloader.bin", "offset": 4096 },
-          { "path": "loomx_lune_legacy_v1.ino.partitions.bin", "offset": 32768 },
-          { "path": "boot_app0.bin", "offset": 57344 },
-          { "path": "loomx_lune_legacy_v1.ino.bin", "offset": 65536 }
-        ]
-      },
-      {
-        "chipFamily": "ESP32",
-        "parts": [
-          { "path": "loomx_lune_legacy_v1.ino.bootloader.bin", "offset": 4096 },
-          { "path": "loomx_lune_legacy_v1.ino.partitions.bin", "offset": 32768 },
-          { "path": "boot_app0.bin", "offset": 57344 },
-          { "path": "loomx_lune_legacy_v1.ino.bin", "offset": 65536 }
-        ]
-      },
       {
         "chipFamily": "ESP32",
         "parts": [

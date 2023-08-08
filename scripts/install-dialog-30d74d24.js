@@ -637,8 +637,8 @@ import{l as e,o as t,_ as i,n,B as o,t as r,i as a,a as d,e as s,b as l,R as c,x
             `}
       `}return[i,t,n]}_renderAskErase(){return["Erase device",h`
       <div>
-        Do you want to erase the device before installing
-        ${this._manifest.name}? All data on the device will be lost.
+        All data on the device will be replaced with
+        ${this._manifest.name}. Hold down the boot button (bottom right button) on the controller.
       </div>
       <ewt-formfield label="Erase device" class="danger">
         <ewt-checkbox></ewt-checkbox>
@@ -662,7 +662,7 @@ import{l as e,o as t,_ as i,n,B as o,t as r,i as a,a as d,e as s,b as l,R as c,x
           label="Erase User Data"
           @click=${this._confirmInstall}
         ></ewt-button>
-      `;else if(this._installConfirmed)if(this._installState&&"initializing"!==this._installState.state&&"preparing"!==this._installState.state)if("erasing"===this._installState.state)e="Installing",t=this._renderProgress("Erasing"),i=!0;else if("writing"===this._installState.state||"finished"===this._installState.state&&void 0===this._client){let n,o;e="Installing","finished"===this._installState.state?o="Wrapping up":this._installState.details.percentage<4?o="Installing":n=this._installState.details.percentage,t=this._renderProgress(h`
+      `;else if(this._installConfirmed)if(this._installState&&"initializing"!==this._installState.state&&"preparing"!==this._installState.state)if("erasing"===this._installState.state)e="Installing",t=this._renderProgress("Erasing... You can let go of the button"),i=!0;else if("writing"===this._installState.state||"finished"===this._installState.state&&void 0===this._client){let n,o;e="Installing","finished"===this._installState.state?o="Wrapping up":this._installState.details.percentage<4?o="Installing":n=this._installState.details.percentage,t=this._renderProgress(h`
           ${o?h`${o}<br />`:""}
           <br />
           This will take
